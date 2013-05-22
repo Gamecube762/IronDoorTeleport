@@ -1,0 +1,19 @@
+name: IronDoorTeleport
+main: com.github.Gamecube762.IDT.Main
+author: Gamecube762
+authors: [Gamecube762, djchia]
+version: 1.0
+prefix: IDT
+permissions:
+   idt.use:
+      description: people with this perm can teleport threw all iron doors
+      default: false
+   idt.warn:
+      description: people with this perm can receave error messages
+      default: false
+   idt.debug:
+      description: people with this perm can receave debug messages
+      default: false
+   idt.use.<name>:
+      description: people with this perm can teleport threw iron doors
+      default: false

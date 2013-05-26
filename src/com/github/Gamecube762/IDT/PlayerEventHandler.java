@@ -128,8 +128,9 @@ public class PlayerEventHandler implements Listener {
 					newLoc.setX(newLoc.getX()+0.5);
 					newLoc.setZ(newLoc.getZ()+0.5);
 				
-					p.getWorld().playEffect(pLoc, Effect.MOBSPAWNER_FLAMES, 0);
+					p.getWorld().playEffect(pLoc, Effect.MOBSPAWNER_FLAMES, 1);//flames at the before spot
 					p.teleport(newLoc);
+					p.getWorld().playEffect(newLoc, Effect.MOBSPAWNER_FLAMES, 1);//flames at the after spot
 					}
 				}
 			}
